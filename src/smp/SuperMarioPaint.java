@@ -399,7 +399,7 @@ public class SuperMarioPaint extends Application {
                 				break;
                     		if(ke.isControlDown() && ke.isShiftDown())
                     			controller.getStaff().shift(-4);
-                    		if(ke.isControlDown() || ke.isShiftDown())
+                    		if((ke.isControlDown() && ke.getCode() != KeyCode.A) || ke.isShiftDown())
                     			controller.getStaff().shift(-4);
                     		break;
                     	case D:
